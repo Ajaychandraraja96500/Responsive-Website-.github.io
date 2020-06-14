@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >Responsive Website#</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" "></script>
+  <link rel="stylesheet" href="styleDL.css">
+ <script>
+    $(document).ready(function(){
+	   $('.btn').click(function(){
+	      var name= $(this).attr('data-filter');
+		  if(name=='all'){
+		     $('.filter').show('200');
+		  }else{
+		     $('.filter').not('.'+name).hide('200');
+		     $('.filter').filter('.'+name).show('200');
+		   }
+	   });
+	});
+ </script>
+    <style>
+	  *{
+	     font-family:Californian FB;
+		 margin:0;
+		 padding:0;
+	  }
+	  #dropdown{
+	    padding:0;
+		 margin:2px;
+		 border-radius:3px;
+		 transition:0.5s;
+	  }
+	  #dropdown:hover{
+	    display:block;
+	  }
+	  .dropdown-item{
+	     background:#aa9;
+		 padding:5px;
+		 margin:0;
+		 transition:0.5s;
+	  }
+	 
+      .bar{
+		    display:none;
+		 }
+	   
+		 .navbar-brand{
+		     color:#fee;
+			 position:absolute;
+			 
+		 }
+	   
+	    #forma{
+	      display:flex;
+		  justify-content:center;
+	   }
+	   
+	   #port{
+	     margin:5px;
+		 display:inline-block;
+	   }
+	   #port .filter{
+	      margin:5px;
+	      display:inline-block;
+	   }
+	   .PortFolio{
+	      height:90vh;
+	   }
+	   li {
+	      text-transform:uppercase;
+		  
+	    }
+	   nav a span
+	   {
+	     color:#f00;
+		 font-size:20px;
+	   }
+	  
+	   
+	   
+	   
+	  
+	  @media (max-height:600px){
+	     .bar{
+		    display:block;
+			
+		 }
+		 .bar i{
+		    position:absolute;
+			right:20px;
+			top:5px;
+			font-size:22px;
+			color:#fff;
+			cursor:pointer;
+			
+		 }
+		 #bars{
+		    color:#eff;
+			background:#000;
+			text-align:center;
+			margin-top:28px;
+			padding:0;
+			width:100%;
+			z-index:999;
+			overflow:hidden;
+		 }
+		 
+		 
+		 .navbar-brand{
+		     color:#fee;
+			 position:absolute;
+			 
+		 }
+		 #about{
+		    font-size:14px;
+			font-family:roboto,sans-serif;
+		 }
+		  #form{
+	     padding:20px;
+	   }
+		 
+		 .PortFolio{
+		    height:100vh;
+		 }
+		  .filter img{
+		    padding:0 30px;
+			margin:0;
+			display:flex;
+		 }
+		 
+		 nav{
+		  
+		 }
+		 
+		 
+	  }
+
+    </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navabr-light">
+      <a href="R.html" class="navbar-brand">Technical <span>Chandra</span></a>
+	   <span class="bar" id="bar"><i class="fa fa-bars" data-target="#bars" data-toggle="collapse"></i></span>
+	     <div class="collapse navbar-collapse" id="bars">
+		     <ul class="navbar-nav ml-auto mr-4">
+			     <li class="nav-item mr-4"><a href="HTML.html" class="nav-link"><i class="fa fa-home">HOME</i></a></li>
+			     <li class="nav-item mr-4"><a href="#about" class="nav-link"><i class="fa fa-info-circle">ABOUT</i></a></li>
+			     <li class="nav-item mr-4 dropdown"><a href="Shopping-cart.html" class="nav-link "><i class="fa fa-shopping-cart">SHOPPING CART</i></a>
+				    <!-- <div class="dropdown-menu" id="shoppingss">
+					  <a href="#" class="dropdown-item" >Casual-Shirts</a>
+					  <a href="#" class="dropdown-item" >Casual-Paints</a>
+					  <a href="#" class="dropdown-item" >Casual-Trousers</a>
+					</div> -->
+				 </li>
+				 
+			     <li class="nav-item mr-4 dropdown" data-toggle="dropdown" data-target="#pics"><a href="#portfolio" class="nav-link"><i class="fa fa-photo">PortFolios</i></a>
+				    <div class="dropdown-menu" id="pics">
+					  <a href="#portfolio" class="dropdown-item">Iron-men Pics</a>
+					  <a href="topnav.html" class="dropdown-item">Dashing Pics</a>
+					  <a href="HTML" class="dropdown-item">Forien Pics</a>
+					  <a href="" class="dropdown-item">Indian Pics</a>
+				    </div>
+				 </li>
+			     <li class="nav-item mr-4 dropdown" data-toggle="dropdown" data-target="#dropdown"><a href="#course" class="nav-link "><i class="fa fa-book">COURSES</i></a>
+				     <div class="dropdown-menu" id="dropdown">
+					   <a href="HTML.html" class="dropdown-item">HTML</a>
+					   <a href="#" class="dropdown-item">BOOTSRTAP</a>
+					   <a href="#" class="dropdown-item">MYSQL</a>
+					   <a href="#" class="dropdown-item" >J-QUERY</a>
+					 </div>
+				 </li>
+			     <li class="nav-item mr-4"><a href="#login" class="nav-link"><i class="fa fa-user">LOGIN</i></a></li>
+			 </ul>
+		 </div >
+  </nav>
+ 
+  
+  <section class="carousel my-1">
+  <div class="carousel slide" data-slide="carousel" id="carousel">
+     <div class="carousel-inner">
+	     <div class="carousel-item active">
+		     <img src="img/E.jpg">
+		 </div>
+		 <div class="carousel-item active">
+		     <img src="img/D.jpg">
+		 </div>
+		 <div class="carousel-item active">
+		     <img src="img/G.jpg">
+		 </div>
+		 <div class="carousel-item active">
+		     <img src="img/I.jpg">
+		 </div>
+		 <div class="carousel-item active">
+		     <img src="img/A.jpg">
+		 </div>
+		 <div class="carousel-item active">
+		     <img src="img/F.jpg">
+		 </div>
+	 </div >
+  </div>
+  </section>
+  
+  
+  <section class="about my-5" id="about"> 
+     <div class="container shadow my-5 p-4">
+	     <div class="container text-center my4">
+		    <h1>About us</h1>
+		 </div>
+		 <div class="container text-left my-5">
+		    <p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					
+					vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Ut a tellus at erat sent id lobortis justo.
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh. </p>
+					<p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Ut a tellus at erat sent id lobortis justo.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					
+					vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Ut a tellus at erat sent id lobortis justo.
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh. </p>
+					<p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Ut a tellus at erat sent id lobortis justo.
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh. </p>
+		 </div>
+	 </div>
+  </section>
+  
+  
+  <section class="course my-4" id="course">
+     <div class="container p-4">
+	     <div class="row">
+		    <div class="col-sm-4 col-lg-4 mt-4">
+			   <div class="card shadow text-center py-4">
+			       <div class="card-head"><h2>HTML</h2></div>
+				   <div class="card-body "><p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.</div>
+			   </div>
+			</div>
+			 <div class="col-sm-4 col-lg-4 my-4">
+			   <div class="card shadow text-center py-4">
+			       <div class="card-head"><h2>JAVA SCRIPT</h2></div>
+				   <div class="card-body "><p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.</div>
+			   </div>
+			</div>
+			 <div class="col-sm-4 col-lg-4 my-4">
+			   <div class="card shadow text-center py-4">
+			       <div class="card-head "><h2>BOOTSTRAP</h2></div>
+				   <div class="card-body "><p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.</div>
+			   </div>
+			</div>
+		 </div>
+	 </div>
+  </section>
+  
+  
+  <section class="shopping  my-5 p-4" id="shopping"> 
+     <div class="container shadow p-4">
+	    <div class="row">
+		   
+		   <div class="col-lg-6 col-sm-6"> 
+		      <div class="card my-5 p-4 ">
+			     <img src="img/D.jpg" width="80%" style="height:350px;">
+				 <div class="caution text-center bg-dark text-white">IRON.JPG</div>
+			  </div>
+		   </div>
+		   <div class="col-lg-6 col-sm-6"> 
+		      <h1 class="text-center p-4 ">SHOPPINGS</h1>
+		   <p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.<p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.
+					Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.<p >Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.</p> </div>
+		 </div>
+	 </div>
+  </section>
+
+  
+  <section class="login my-5 p-4" id="login"> 
+     <div class="container shadow p-4  " id="forma">
+	     <div class="container shadow py-5 m-5 " id="form" style="width:70%; ">
+		     <h2 class="text-center pb-2">LOGIN FORM</h2>
+			 <form>
+			 <div class="form-groups">
+			    <label>Email ID</label>
+				<input type="text" class="form-control" aria-haspopup="false">
+			 </div>
+			 <div class="form-groups my-3">
+			    <label>Password</label>
+				<input type="password" class="form-control" aria-haspopup="false">
+			 </div>
+			 <div class="form-groups my-2" >
+			    <button class="btn btn-danger btn-outline-dark form-control my-4">Login</button	>
+			 </div>
+			 </form>
+		 </div>
+	 </div>
+  </section>
+  
+  
+  <section class="shopping shadow my-5 p-5">
+      <div class="container p-3" id="product">
+	     <div class="row">
+		    <div class="col-lg-3 col-sm-4">
+			    <div class="card mt-3">
+				   <div class="card-heading my-1 p-1">
+				      <h3 class="text-center py-1">Jeans Paints</h3>
+				   </div>
+				   <div class="card-body">
+				      <img src="img/E.jpg" width="100%" style="height:110px;">
+					  <h4 class="ml-1 mt-1">FOX PRO</h4>
+					  <p class="">
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star-half"></i></span>
+					  </p>
+					  <p class="">e<small style="font-size:13px;">vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.e</small></p>
+					  <h4 class="text-left mx-1 px-1 ">Price <span><small>$451</small></span></h4>
+					  <button class="btn btn-warning btn-outline-dark px-5 my-2">ADD TO CART</button>
+				   </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-sm-4">
+			    <div class="card mt-3">
+				   <div class="card-heading my-1 p-1">
+				      <h3 class="text-center py-1">Jeans Paints</h3>
+				   </div>
+				   <div class="card-body">
+				      <img src="img/E.jpg" width="100%" style="height:110px;">
+					  <h4 class="ml-1 mt-1">FOX PRO</h4>
+					  <p class="">
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star-half"></i></span>
+					  </p>
+					  <p class="">e<small style="font-size:13px;">vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.e</small></p>
+					  <h4 class="text-left mx-1 px-1 ">Price <span><small>$451</small></span></h4>
+					  <button class="btn btn-warning btn-outline-dark px-5 my-2">ADD TO CART</button>
+				   </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-sm-4">
+			    <div class="card mt-3">
+				   <div class="card-heading my-1 p-1">
+				      <h3 class="text-center py-1">Jeans Paints</h3>
+				   </div>
+				   <div class="card-body">
+				      <img src="img/E.jpg" width="100%" style="height:110px;">
+					  <h4 class="ml-1 mt-1">FOX PRO</h4>
+					  <p class="">
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star-half"></i></span>
+					  </p>
+					  <p class="">e<small style="font-size:13px;">vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.e</small></p>
+					  <h4 class="text-left mx-1 px-1 ">Price <span><small>$451</small></span></h4>
+					  <button class="btn btn-warning btn-outline-dark px-5 my-2">ADD TO CART</button>
+				   </div>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-sm-4">
+			    <div class="card my-3">
+				   <div class="card-heading my-1 p-1">
+				      <h3 class="text-center py-1">Jeans Paints</h3>
+				   </div>
+				   <div class="card-body">
+				      <img src="img/E.jpg" width="100%" style="height:110px;">
+					  <h4 class="ml-1 mt-1">FOX PRO</h4>
+					  <p class="">
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star"></i></span>
+					     <span><i class="fa fa-star-half"></i></span>
+					  </p>
+					  <p class="">e<small style="font-size:13px;">vulputate dignissim quam euismod venenatis.
+					vulputate dignissim quam euismod venenatis.e</small></p>
+					  <h4 class="text-left mx-1 px-1 ">Price <span><small>$451</small></span></h4>
+					  <button class="btn btn-warning btn-outline-dark px-5 my-2">ADD TO CART</button>
+				   </div>
+				</div>
+			</div>
+		 </div>
+	  </div>
+  </section>
+  
+  
+  <section class="PortFolio p-4 my-5" id="portfolio"> 
+     <div class="container shadow my-2 p-4 text-center">
+	    <div class="btn-groups">
+		   <button class="btn btn-outline-dark btn-danger" data-filter="all">ALL</button>
+		   <button class="btn btn-outline-dark btn-danger" data-filter="one">ONE</button>
+		   <button class="btn btn-outline-dark btn-danger" data-filter="two">TWO</button>
+		   <button class="btn btn-outline-dark btn-danger" data-filter="three">THREE</button>
+		</div >
+		
+		<div class="container shadow my-4 p-4" id="port" >
+		    <div class="filter one" >
+			   <img src="img/D.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter two">
+			   <img src="img/E.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter two">
+			   <img src="img/I.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter one">
+			   <img src="img/C.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter one">
+			   <img src="img/F.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/K.png"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/G.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/H.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/J.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/A.jpg"  style="height:150px; width:250px;">
+			</div>
+			<div class="filter three">
+			   <img src="img/B.jpg"  style="height:150px; width:250px;">
+			</div>
+			
+		 </div>
+	 </div>
+  </section>
+ 
+  
+ 
+</body>
+</html>
