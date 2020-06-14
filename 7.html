@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" "></script>
+    <link rel="stylesheet" href="TV.css">
+ <script>
+   
+ </script>
+    <style>
+	 #main
+	 {
+	   padding:5px;
+	   margin-bottom:20px;
+	   margin-top:30px;
+	   font-family:californian;
+	 }
+	 #main #star
+	 {
+	    border:1px solid #000;
+		height:640px;
+		width:630px;
+	 }
+	 #main .star .picture
+	 {
+	   width:280px;
+	   height:300px;
+	   display:inline-block;
+	   border:1px solid #ff0;
+	   margin:5px;
+	   overflow:hidden;
+	   
+	 }
+	 .picture img
+	 {
+	   width:100%;
+	   height:100%;
+	   border:1px solid #f00;
+	   transition:0.6s;
+	 }
+	 .picture img:hover
+	 {
+	   transform:scale(1.3);
+	   cursor:pointer;
+	   
+	 }
+	 /*-------------------*/
+	  .multiform
+	  {
+	    padding:5px;
+		text-align:left;
+		border:1px solid #000;
+		height:640px;
+		text-align:left;
+	  }
+	  .multiform #h3-1
+	  {
+	   margin-top:30px;
+	   margin-bottom:30px;
+	  }
+	  .multiform #h6-1
+	  {
+	    padding:5px 10px;
+		margin-bottom:50px;
+	  }
+	  .multiform #text-1
+	   {
+	    padding:5px 10px;
+		margin-bottom:50px;
+		color:orange;	
+	  }
+	  .multiform .mess
+	  {
+	   padding:0;
+	   margin-left:15px;
+	   color:blue;
+	   margin-bottom:20px;
+	  }
+	  .multiform .mess a
+	  {
+	   margin-left:15px;
+	   color:orange;
+	   height:35px;
+	  }
+	  .multiform .shopping-btn
+	  {
+	    margin-top:50px;
+		padding:10px 10px;
+	  }
+	  .multiform .shopping-btn input
+	  {
+	    width:10%;
+	  }
+	 .multiform .shopping-btn button
+	  {
+	    padding:5px 8px;
+		
+		
+	  }
+	 
+	
+	
+	
+       .text input
+	   {
+	     width:28px;
+		 border:1px solid #000;
+		 margin-top:30px;
+		 margin-left:10px;
+		 padding:5px 1px;
+	   }
+       
+	   .shopping-btn
+	   {
+	     padding:5px;
+		 margin-top:30px;
+	   }
+	   .shopping-btn input
+	   {
+	     width:25px;
+		 margin-right:10px;
+		 padding:2px 6px;
+		 text-align:center;
+		 font-weight:bold;
+		 border-sha:none;
+	   }
+	   
+	   .shopping-btn button
+	   {
+	     font-weight:bold;
+		 padding:2px 4px;
+	   }
+	   #now
+	   {
+	     font-size:12px;
+		 color:#898;
+		 padding:5px 5px;
+		 margin-top:10px;
+		 margin-bottom:10px;
+		 
+	   }
+    </style>
+
+</head>
+<body>
+ <!-------Nav----------->
+  
+   <nav class="navbar navbar-expand-lg bg-dark navbar-white ">
+     <label class="logo">TECHINCAL</label>
+	  <i class="fa fa-bars" data-toggle="collapse" data-target="#collapse-nav"></i>
+       <div class="collapse navbar-collapse" id="collapse-nav">
+	      <ul class="navbar-nav ml-auto">
+		     <li class="nav-items"><a href="TV.html" class="nav-link"><i class="fa fa-home"></i>Home</a></li>
+		     <li class="nav-items"><a href="" class="nav-link"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+		     <li class="nav-items"><a href="" class="nav-link"><i class="fa fa-photo"></i>Portfolios</a></li>
+		     <li class="nav-items"><a href="About.html" class="nav-link"><i class="fa fa-info-circle"></i>About</a></li>
+		     <li class="nav-items"><a href="" class="nav-link"><i class="fa fa-shopping-cart"></i>Products</a></li>
+		     <li class="nav-items"><a href="" class="nav-link"><i class="fa fa-user"></i>Login</a></li>
+		  </ul>
+		</div>
+   </nav>
+   
+   
+   <!-------------------Side------------------------>
+   
+   <!-----------------------------------------------------Summary------------------------------------------------------------->
+
+     <section>
+	     <div class="container-flex" id="main">
+		       <div class="row">
+			      <div class="col-lg-6 col-sm-6">
+				      <div class="container star " id="star">
+				        <div class="picture"><img src="E/A/A-9.jpg"></div>
+						<div class="picture"><img src="E/A/A-9.jpg"></div>
+						<div class="picture"><img src="E/A/A-9.jpg"></div>
+						<div class="picture"><img src="E/A/A-9.jpg"></div>
+						
+					</div>
+					</div>
+					<div class="col-lg-6 col-sm-6">
+					 <div class="multiform contaienr p-3">
+				        <h3 class="text" id="h3-1">Blue Cotton Melfair Star-Shape Shirt </h3>
+						<h6 class="text" id="h6-1">In Blsck Color Also Avialable</h6>
+						<p class="text-justify" id="text-1"> Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					                    Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo.
+										Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					                    Nullam eu orci lorem. Donec a faucibus nibh.Ut a tellus at erat sent id lobortis justo. 
+					                    Suspendisse rutrum nisl lectus, vulputate dignissim quam euismod venenatis.
+					                    vulputate dignissim quam euismod venenatis.
+					    </p>
+						<div class="Color">
+						   <h3 class="text-justify mess">Select Size 
+						       <a href="" class="btn btn-outline-dark ">32</a>
+						       <a href="" class="btn btn-outline-dark ">36</a>
+						       <a href="" class="btn btn-outline-dark ">38</a>
+						       <a href="" class="btn btn-outline-dark ">42</a>
+						   </h3>
+						   <h3 class="text-justify mess">Select Color 
+						       <span><input class="color" type="color" value="black" id="black"></span>
+						       <span><input class="color" type="color" value="black" id="White"></span>
+						       <span><input class="color" type="color" value="white" id="green"></span>
+						   </h3>
+						</div>
+						<div class="shopping-btn">
+						   <input type="text" value="1" id="order">
+						   <button class="btn btn-outline-dark">ADD TO CART</button>
+						</div>
+						<p class="text-left" id="now">This Cart Show The Best Price Ever In Stock</p>
+					</div>
+			   </div>
+			   </div>
+		 </div>
+	 
+	 
+	 
+	 
+	 </section>
+     <!-----------------------x------------------------------Summary-----------------x-------------------------------------------->
+
+   
+
+   
+   <!-----------------------------------------------------Summary------------------------------------------------------------->
+
+    
+     <!-----------------------x------------------------------Summary-----------------x-------------------------------------------->
+
+   
+    <!---------------------------------------------->
+   
+   <section class="" id=""> 
+       <div class="" id="">
+	   
+	   </div>
+   </section>
+   
+   <!------------------------Products-Fronts--------------------->
+   
+   <section class="product" id="productA-0"> 
+       <div class="product-1" id="productA-1">
+	              <div class="box"><h2>NEW ARRIVALS</h2></div>
+	      <div class="row">
+		       <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="1.html" title="Gray-Color CheckShirt"><img src="E/A/A-9.jpg"  width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>APOLLO Ti</h4>
+						 <p>Long Sleeve Shirt With Hard Colur</p>
+						 <h3>Rs <span>199</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="DARKGray-Color CheckedShirt Appolo"><img src="E/A/A-1.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>APOLLO Ti</h4>
+						 <p> Blue Color long sleeve-shirt</p>
+						 <h3>Rs <span>599</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="SkyBlue-Color Plain Moro-Shirt"><img src="E/A/A-3.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>APOLLO Ti</h4>
+						 <p>Long Sleeve Shirt Sky-Blue COlor</p>
+						 <h3>Rs <span>149</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-4 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="White-Color Slim-Shirt"><img src="E/A/A-5.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>APOLLO Ti</h4>
+						 <p>Long Sleeve Shirt With Hard Colur</p>
+						 <h3>Rs <span>1499</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			  
+		  </div>
+	   </div>
+   </section>
+   
+    <!---------------------------------------------->
+   
+   <section class="" id=""> 
+       <div class="" id="">
+	   
+	   </div>
+   </section>
+   
+   
+   
+   <!------------------------Products-TRENDING--------------------->
+   
+   <section class="product" id="productA-0"> 
+       <div class="product-1" id="productA-1">
+	              <div class="box"><h2>TRENDING</h2></div>
+	      <div class="row">
+		       <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="Long Sleeve Dark-Gray-Whit-Color Foji Shirt"><img src="E/A/A-6.jpg"  width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>Jack-Spire</h4>
+						 <p>Long Sleeve Dark-Gray-Whit-Color Foji Shirt</p>
+						 <h3>Rs <span>1599</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="Dark blue White Dotted Shirt"><img src="E/A/A-9.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>Alto-Class Ti</h4>
+						 <p> Dark blue White star multi color Dotted  Shirt</p>
+						 <h3>Rs <span>899</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-3 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="Dark-Black Cotton Full-Sleeve Branding Shirt"><img src="E/A/A-10.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>Puma</h4>
+						 <p>Dark-Black Cotton Full-Sleeve Branding Shirt</p>
+						 <h3>Rs <span>1449</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			   <div class="col-lg-3 col-md-4 col-sm-3">
+			       <div class="card">
+				      <div class="imgbox">
+					     <a href="" title="White Lining Orange Mix-Colr Shirt Drgo"><img src="E/A/A-11.jpg" width="100%"></a>
+					  </div>
+					  <div class="over">
+					     <i class="fa fa-shopping-cart" title="ADD TO CART"></i>
+					  </div>
+					  <div class="card-body">
+					     <h4>Puma</h4>
+						 <p>White Lining Orange Mix-Colr Shirt Drgo</p>
+						 <h3>Rs <span>1199</span></h3>
+					  </div>
+				   </div>
+				   
+			   </div>
+			  
+		  </div>
+	   </div>
+   </section>
+   
+  
+   
+   
+   <!-------------------------------------------Footer---------------------------------------------->
+   
+   <div class="footer">
+      <h5 class="text-center text-light bg-dark">&copy; Copyright 2020 ;</h5>
+   </div>
+   
+   
+</body>
+</html>

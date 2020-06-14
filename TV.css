@@ -1,0 +1,917 @@
+/*-----Style---*/
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+nav
+{
+		
+	width:100%;
+	position:fixed;
+	z-index:5;
+}
+
+nav .logo
+{
+  font-size:20px;
+  color:#fff;
+  padding:0 60px;
+}
+
+.fa-bars
+{
+	font-size:20px;
+	color:#fff;
+	padding:10px;
+	float:right;
+	margin-right:10px;
+	display:none;
+}
+
+nav ul
+{
+	margin-right:60px;
+}
+
+nav ul li
+{
+	padding:0 20px;
+	
+}
+
+nav ul li a
+{
+	padding:0 20px;
+	border:1px solid transparent;
+	color:#fff;
+}
+
+nav ul li a:hover
+{
+	background:#8f8;
+		color:#981;
+		text-decoration:none;
+}
+
+
+/*------------Side-----*/
+ .side
+ {
+	 width:15%;
+	 height:85vh;
+	 background:#000;
+	 color:#fff;
+	 margin:5px;
+ }
+ 
+ .side ul
+ {
+	 
+	 list-style:none;
+	 margin:5px 0px;
+	 padding:15px 5px;
+ }
+ 
+ .side ul li
+ {
+	 position:relative;
+	 z-index:2;
+	 padding:10px 0px;
+	 border-bottom:1px solid #eef;
+	 cursor:pointer;
+ }
+ 
+ .side ul li .fa-angle-right
+ {
+	 position:absolute;
+	 top:15px;
+	 right:5px;
+ }
+ 
+ 
+ 
+ .side ul li ul
+ {
+	 display:none;
+	 border-bottom:1px solid #00e;
+ }
+ 
+ .side ul li:hover ul
+ {
+	 display:block;
+	 height:300px;
+	 background:#845;
+	 margin-left:102%;
+	 width:100%;
+	 position:absolute;
+	 top:-10px;
+	 cursor:pointer;
+ }
+
+ .side ul li ul li
+ {
+	 padding:6px 0px;
+	 margin:2px 0;
+	 border-bottom:1px solid #eff;
+ }
+
+.side ul li ul li:hover
+ {
+	 background:#eee;
+	 color:#001;
+ }
+
+
+/*----------------------------------Carousel-Slider-Width-OverLay-------------------------------------------*/
+
+#carousel-1
+{
+	width:83%;
+	height:70vh;
+	position:absolute;
+	top:10%;
+	left:16%;
+	padding:5px;
+}
+
+#carousel
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	
+}
+
+
+#carousel img
+{
+	width:100%;
+	height:85vh;
+}
+
+#carousel-1 .carousel-overlay
+{
+  position:absolute;
+  top:30%;  
+  left:5%;
+  padding:10px;
+  text-align:center;
+  box-shadow:1px 1px 1px 2px #820;
+  width:600px;
+  background:rgba(0,0,0,0.4);
+}
+
+#carousel-1 .carousel-overlay h2
+{
+	text-align:center;
+	color:#fff;
+	margin-bottom:10px;
+	padding:10px;
+	text-transform:uppercase;
+}
+
+#carousel-1 .carousel-overlay .btn
+{
+	text-align:center;
+	color:#fff;
+	background:#027;
+	margin-bottom:10px;
+	padding:10px;
+	text-transform:uppercase;
+	transition:0.5s;
+	margin-top:100px;
+}
+
+#carousel-1 .carousel-overlay .btn:hover
+{
+	
+	color:#fff;
+	background:transparent;
+	
+	
+}
+
+/*-----------------------------------------------------About-us---------------------------------------------------------------*/
+    /*-------------------------------------------------More-products-----------------------------*/
+  
+   .productmore
+   {
+	  width:100%;
+	  border:1px; 
+	  background:#999;
+   }
+   .productmore .container
+   {
+	   width:500%;
+   }
+   
+  
+  
+  
+  /*--------------------------------------Product--------------------------------------*/
+    #productA-0
+	{
+		width:100%;
+		
+		padding:2px;
+		margin-top:80px;
+		display:flex;
+		justify-content:space-around;
+	}
+	
+	#productA-0 #productA-1
+	{
+		padding:10px 30px;
+		overflow:hidden;
+	}
+	
+	#productA-0 #productA-1 .card
+	{
+		width:290px;
+		height:450px;
+		border:none;
+		transition:0.7s;
+		transition-property:right;
+		overflow:hidden;
+		box-sizing:border-box;
+	}
+	
+	#productA-0 #productA-1 .card imgbox 
+	{
+		
+		height:350px;
+		position:relative;
+		overflow:hidden;
+	}
+	
+	#productA-0 #productA-1 .card img
+	{
+		width:100%;
+		height:300px;
+		position:relative;
+		border:1px solid #e00;
+		transform:scale(.9);
+		transition:0.6s;
+		overflow:hidden;
+		overflow:hidden;
+	}
+	#productA-0 #productA-1 .card .imgbox:hover img 
+	{
+		
+		transform:scale(1.1);
+	}
+	
+    #productA-0 #productA-1 .card .over
+	{
+		position:absolute;
+		bottom:36%;
+		right:10%;
+		padding:2px;
+	}
+	#productA-0 #productA-1 .card .over i
+	{
+		padding:10px 20px;
+		font-size:28px;
+		color:#008;
+		cursor:pointer;
+		display:none;
+		transition:0.6s;
+		
+	}
+	
+    #productA-0 #productA-1 .card:hover .over i
+	{
+		display:block;
+		right:10%;
+	}
+	
+	#productA-0 #productA-1 .card .card-body h4,p,h3
+	{
+		text-align:center;
+		font-size:18px;
+		margin:0;
+		padding:0;
+	}
+	
+	.card p
+	{
+		font-size:16px;
+		padding:5px 8px;
+	}
+	
+	#productA-1 .box
+	{
+		width:20%;
+		background:#999;
+		height:40px;
+		padding:0;
+		margin-left:12px;
+		position:relative;
+		margin-bottom:20px;
+	}
+	
+	#productA-1 .box::after
+	{
+		content:'';
+		position:absolute;
+		border-top:40px solid #999;
+		border-right:50px solid transparent;
+		margin-top:-46px;
+		left:250px;
+	}
+	
+	/*-------------------------------------------------------------------------------MultiBrand-----------------------------------------------------------------*/
+	.Multi
+	{
+		padding:10px;
+	}
+	
+	.MultiBrand
+	{
+		margin:0;
+		overflow:hidden;
+		
+	}
+	
+	.MultiBrand .box
+	{
+		width:25%;
+		height:40px;
+		background:#159;
+		margin-bottom:40px;
+		position:relative;
+	}
+	
+	.MultiBrand .card 
+	{
+		width:200px;
+		padding:5px;
+		overflow:hidden;
+		text-align:center;
+		background:rgba(0,88,99,0.5);
+		margin:10px 0px;
+		transition:0.7s;
+	}
+	
+	.MultiBrand .card a img
+	{
+		width:100%;
+		transition:0.7s;
+		
+	}
+	.MultiBrand .card:hover img
+	{
+		transform:scale(1.2);
+		
+	}
+	
+	.MultiBrand .box::after
+	{
+		content:'';
+		position:absolute;
+		display:flex;
+		border-bottom:40px solid #159;
+		border-right:50px solid transparent;
+		margin-top:-46.5px;
+		left:330px;
+	}
+	
+	
+	
+	
+	
+	/*---------------------------Footer---------------*/
+
+
+.footer h5
+{
+	width:100%;
+	height:50px;
+	margin:0;'
+	line-height:50px;
+}
+
+/*----------------------------------polices--------------------*/
+  .polices
+  {
+	  margin:50px 0;
+	  padding:10px 0;
+	  font-family:californian;
+  }
+  
+  
+  .polices h1
+  {
+	  padding:20px 10px;
+  }
+ .polices .container
+ {
+	 width:60%;
+	 border:1px solid #fff;
+	 margin-left:20px;
+	 text-align:center;
+	 height:350px;
+ }
+
+.polices .container a,input
+ {
+	 width:80%;
+	 display:block;	
+	 margin-left:5px;
+	 margin:5px 10px;
+ }
+ .polices .container input
+ {
+	
+	 margin-top:10px;
+ }
+ 
+ /*--------------------------prodicdc------------------*/
+ .trollerss
+ {
+	 margin-top:50px;
+	 margin-left:10px;
+	 background:#000;
+	 color:#fff;
+	 padding:10px 0;
+ }
+ 
+ .trollerss .container-flex
+ {
+	display:flex;
+	background:#000;
+	color:#fff;
+	height:190px;
+	justify-content:space-around;
+	align-items:center;
+ }
+ .trollerss .container-flex h1
+ {
+	 margin:10px 20px;
+	 font-size:25px;
+	 
+ }
+ 
+ .trollerss .container-flex i
+ {
+	 margin:10px 20px;
+	 font-size:65px;
+	 
+ }
+ .trollerss .container-flex h1 span
+ {
+	 margin:10px 0px;
+	 
+	 
+ }
+ 
+ 
+ 
+ /*------------------------------------------Fomr---------------------------------*/
+ .login
+ {
+	 padding:20px 40px;
+ }
+ 
+ .login form
+ {
+	 width:50%;
+	 float:center;
+	 margin-left:20%;
+ }
+ 
+ .login form h2
+ {
+	 width:100%;
+	 text-align:center;
+	 text-transform:uppercase;
+	 color:#982545;
+	 margin-bottom:40px;
+ }
+ 
+ .login form input,label
+ {
+	 
+	 text-align:center;
+	 text-transform:uppercase;
+	 
+	 margin-bottom:10px;
+	 float:left;
+ }
+ input[type="checkbox"]
+ {
+	 float:left;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+/*---------------------------------------------------------------------------------------------------Media -Queris-----------------------------------------------------------------*/
+
+@media (max-width:1120px)
+{
+	nav
+	{
+		z-index:2;
+	}
+	
+	.logo
+	{
+		color:#fff;
+		font-size:20px;
+		padding:8px 60px;
+		letter-spacing:2px;
+	}
+	
+	nav .fa-bars
+	{
+	  padding:18px 10px;
+      display:block;	  
+	}
+	
+	nav ul
+	{
+		text-align:center;
+	}
+	
+	nav ul li 
+	{
+		margin:7px 0;
+	
+	}
+	
+	nav ul li a
+	{
+		width:100%;
+		color:#fff;
+		padding:5px 150px;
+		font-weight:bold;
+		transition:0.6s;
+	}
+	
+	nav ul li a:hover
+	{
+		background:#8f8;
+		color:#981;
+		text-decoration:none;
+	}
+	
+	
+	
+	    /*--------------------------------------------Side--------------------------------------------------------------------------------------------------------*/
+	  .side 
+	  {
+		  width:25%;
+		  height:85vh;
+		  position:relative;
+	  }
+	  
+	  .side li 
+	  {
+		  font-size:16px;
+	  }
+	  
+	  
+	  
+	  /*--------------------------------------------Carousel-Slider-Width-OverLay--------------------------------------------------------------------------------------------*/
+	  
+	  #carousel-1
+	  {
+		  width:73%;
+		  height:85vh;
+		  position:absolute;
+		  top:13%;
+		  left:25.5%;
+	  }
+	  
+	  #carousel-1 .carousel-overlay
+	  {
+		  width:370px;
+		  height:200px;
+	  }
+	  
+	  #carousel-1 .carousel-overlay h2
+	  {
+		  margin:0;
+	  }
+	  
+	  #carousel-1 .carousel-overlay .btn
+	  {
+		  margin-top:70px;
+	  }
+	  
+	  
+	  /*-----------------------------------------------------------------------About-----------------------------------------------------------------*/
+	  #about #show
+	  {
+		  display:none;
+		  
+	  }
+	  
+	  
+	  #about p
+	  {
+		  font-size:16px;
+		  flex-wrap:wrap;
+		  justify-content:justify;
+	  }
+	  
+	  
+	  /*-----------------------Product--------------------------*/
+    #productA-0
+	{
+		width:100%;
+		
+		padding:2px;
+		margin-top:80px;
+		display:flex;
+		justify-content:space-around;
+	}
+	
+	#productA-0 #productA-1
+	{
+		padding:10px 30px;
+		
+	}
+	
+	#productA-0 #productA-1 .card
+	{
+		width:290px;
+		height:450px;
+		border:none;
+		transition:0.7s;
+		transition-property:right;
+	}
+	
+	#productA-0 #productA-1 .card imgbox 
+	{
+		
+		height:350px;
+		position:relative;
+		overflow:hidden;
+	}
+	
+	#productA-0 #productA-1 .card img
+	{
+		width:100%;
+		height:300px;
+		position:relative;
+		border:1px solid #e00;
+		transform:scale(.9);
+		transition:0.6s;
+		overflow:hidden;
+	}
+	#productA-0 #productA-1 .card .imgbox:hover img 
+	{
+		
+		transform:scale(1.1);
+	}
+	
+    #productA-0 #productA-1 .card .over
+	{
+		position:absolute;
+		bottom:36%;
+		right:10%;
+		padding:2px;
+	}
+	#productA-0 #productA-1 .card .over i
+	{
+		padding:10px 20px;
+		font-size:28px;
+		color:#008;
+		cursor:pointer;
+		display:none;
+		transition:0.6s;
+		
+	}
+	
+    #productA-0 #productA-1 .card:hover .over i
+	{
+		display:block;
+		right:10%;
+	}
+	
+	#productA-0 #productA-1 .card .card-body h4,p,h3
+	{
+		text-align:center;
+		font-size:18px;
+		margin:0;
+		padding:0;
+	}
+	
+	.card p
+	{
+		font-size:16px;
+		padding:5px 8px;
+	}
+	  
+	  
+	  				   /*-----------------------Product--------------------------*/
+    
+	
+	#productA-0 #productA-1 .card .card-body h4,p,h3
+	{
+		text-align:center;
+		font-size:18px;
+		margin:0;
+		padding:0;
+	}
+	
+	.card p
+	{
+		font-size:16px;
+		padding:5px 8px;
+	}
+		
+	  
+	  
+	  
+	  
+	  
+	  }
+	  
+	  
+	  
+	  /*--------------------------------Media-Query-600px--------------------------------*/
+	  @media (max-width:690px)
+	  {
+		  
+		  	     nav
+	             {
+	           	  width:100%;
+	           	  position:absolute;
+	             }
+	             
+	             .side li 
+	             {
+	           	  font-size:14px;
+	             }
+				 
+				 
+				 nav ul li a
+				 {
+					 font-size:14px;
+					 
+				 }
+		  
+		  /*--------------------------------Side-Nav-690px---------------------*/
+	           	  .side 
+	             {
+	           	  width:25.3%;
+	           	  height:85vh;
+	           	  position:absolute;
+	             }
+	             
+	             .side li 
+	             {
+	           	  font-size:14px;
+	             }
+				 
+				 
+				 .side ul li ul li
+				 {
+					 font-size:13px;
+					 
+				 }
+		  
+		  /*--------------------------------Side-Nav-690px---------------------*/
+		  
+		  
+			  #carousel-1
+	             {
+		             width:73%;
+		             height:85vh;
+		             position:absolute;
+		             top:13%;
+		             left:25.5%;	
+	             }
+	             
+	          #carousel-1 .carousel-overlay
+                 {
+                   position:absolute;
+                   top:30%;  
+                   left:5%;
+                   padding:10px;
+                   text-align:center;
+                   box-shadow:none;
+                   width:300px;
+                   background:rgba(0,0,0,0.4);
+                 }
+				 
+				 #carousel-1 .carousel-overlay h2
+	               {
+		               margin:0;
+	               }
+	               
+	               #carousel-1 .carousel-overlay .btn
+	               {
+		               margin-top:30px;
+	               }
+				   
+				   
+				   /*-----------------------Product--------------------------*/
+    #productA-0
+	{
+		width:100%;
+		padding:2px;
+		margin-top:80px;
+		display:flex;
+		
+	}
+	
+	#productA-0 #productA-1
+	{
+		padding:10px 30px;
+		margin-top:500px;
+	}
+	
+	#productA-0 #productA-1 .card
+	{
+		width:290px;
+		height:450px;
+		border:none;
+		transition:0.7s;
+		transition-property:right;
+	}
+	
+	#productA-0 #productA-1 .card imgbox 
+	{
+		
+		height:350px;
+		position:relative;
+		overflow:hidden;
+	}
+	
+	#productA-0 #productA-1 .card img
+	{
+		width:100%;
+		height:300px;
+		position:relative;
+		border:1px solid #e00;
+		transform:scale(.9);
+		transition:0.6s;
+		overflow:hidden;
+	}
+	#productA-0 #productA-1 .card .imgbox:hover img 
+	{
+		
+		transform:scale(1.1);
+	}
+	
+    #productA-0 #productA-1 .card .over
+	{
+		position:absolute;
+		bottom:36%;
+		right:10%;
+		padding:2px;
+	}
+	#productA-0 #productA-1 .card .over i
+	{
+		padding:10px 20px;
+		font-size:28px;
+		color:#008;
+		cursor:pointer;
+		display:none;
+		transition:0.6s;
+		
+	}
+	
+    #productA-0 #productA-1 .card:hover .over i
+	{
+		display:block;
+		right:10%;
+	}
+	
+	#productA-0 #productA-1 .card .card-body h4,p,h3
+	{
+		text-align:center;
+		font-size:18px;
+		margin:0;
+		padding:0;
+	}
+	
+	.card p
+	{
+		font-size:16px;
+		padding:5px 8px;
+	}
+				   
+				   
+                 		
+                 
+	  }
+
+ 
